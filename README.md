@@ -43,6 +43,15 @@ New failures are put in the closest existing cluster by embedding similarity. Th
 
 **regress** re-runs the relevance classifier and the extractor on the labeled sets and compares with `eval/baseline.json`. It exits with a failure if any metric drops more than 5 points. It uses about 30 free requests. After an intended improvement, run `regress --update-baseline`. Each run also records the prompt and taxonomy versions in the `runs` table, so you can tell which results came from which version.
 
+## Hosting the Explorer (Streamlit Community Cloud, free)
+
+The hosted app has no pipeline data or keys. It reads `demo/engine.db`, a slim snapshot: post text is kept only for the 877 extracted items, and raw scraper payloads, author hashes and run logs are removed. `requirements.txt` is deliberately small because the host has limited memory; the full pipeline needs `requirements-pipeline.txt`.
+
+1. Refresh the snapshot after new data or a re-cluster: `python -m engine.cli export-demo`, then commit `demo/engine.db` and push. The hosted app updates on push.
+2. On share.streamlit.io choose the repository, branch `main` and main file `app/explorer.py`.
+
+Keep the repository private: it holds post text collected from public sites, and part of it came from Reddit through a method Reddit's rules do not permit.
+
 ## The whole pipeline, one stage per command
 
 | Stage | Command | Output |
