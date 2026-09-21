@@ -1,0 +1,1811 @@
+{
+ "model": "gemini-3.5-flash-lite",
+ "taxonomy": "v1",
+ "records": {
+  "reddit:nze344b": {
+   "i": 0,
+   "photo_type": "unknown",
+   "target_description": "Search for photos in Google Photos",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "regression",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Right now Google Photos Search can't find Jack or Shit and Jack left town."
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "reddit:p2kn53g": {
+   "i": 1,
+   "photo_type": "person_face_related",
+   "target_description": "Find and group poodle pictures in an album",
+   "cues": [
+    {
+     "type": "appearance",
+     "value": "poodles",
+     "status": "remembered",
+     "quote": "poodles"
+    }
+   ],
+   "queries_tried": [
+    "poodles"
+   ],
+   "search_pattern": "descriptive",
+   "failure_mode": "vocabulary_mismatch",
+   "severity": "time_loss",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "doing CtrlF when I open the album and searching for poodles isn't working, it says there are 0 poodle pictures even though I'm looking at one at the top of the album."
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "appstore:us:11722224796": {
+   "i": 2,
+   "photo_type": "unknown",
+   "target_description": "Navigate folders and files in Dropbox app",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Select recents. Select a folder. It doesn\u2019t open the folder. Let me select it but not open."
+   ],
+   "photo_age": null,
+   "product_mentioned": "dropbox",
+   "workaround": null
+  },
+  "reddit:ootud9j": {
+   "i": 3,
+   "photo_type": "person_face_related",
+   "target_description": "Automate discovery of hidden faces in Google Photos",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "the face-suggestion chip in the info panel is an element with a stable role/class, not a localized label"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "gcomm:461988088:461993395": {
+   "i": 4,
+   "photo_type": "unknown",
+   "target_description": "Provide troubleshooting steps for photo caption indexing",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_indexed",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Can you please clear the cached and stored data of the Photos app and try again?"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "reddit:1tbymyw": {
+   "i": 5,
+   "photo_type": "unknown",
+   "target_description": "Complain about Google Photos search quality",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "unspecified",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Why does GP search suck so bad?"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "gcomm:468115002:468294738": {
+   "i": 6,
+   "photo_type": "unknown",
+   "target_description": "Find duplicated photos",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "According to Norton Utilities, I have over 14,000 duplicated photos in Google Photos. Looks like I've got a big job ahead of me."
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": "Norton Utilities"
+  },
+  "gcomm:462784261": {
+   "i": 7,
+   "photo_type": "person_face_related",
+   "target_description": "Find and view disappeared faces in Google Photos",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "identity_failure",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "The faces are not appearing earlier I am able to see but can't now"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "play:cf9c7275-0ce5-4b9f-837e-ac1c4a68f39a": {
+   "i": 0,
+   "photo_type": "unknown",
+   "target_description": "The user wants to find past daily memories to look back at the past years.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "regression",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "medium",
+   "evidence_quotes": [
+    "Too hard to find this day. Memories in the app now. it was nice when it was right there."
+   ],
+   "photo_age": null,
+   "product_mentioned": "amazon_photos",
+   "workaround": null
+  },
+  "gcomm:468693763:468696819": {
+   "i": 1,
+   "photo_type": "unknown",
+   "target_description": "The user is trying to recover deleted photos and videos from trash history.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "I want my delete photo video all kindly recover my dataz as possible and trash history back please comnetiy"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "gcomm:465289959:465302848": {
+   "i": 2,
+   "photo_type": "early_digital",
+   "target_description": "The user is helping find photos taken in 2012.",
+   "cues": [
+    {
+     "type": "when",
+     "value": "2012",
+     "status": "remembered",
+     "quote": "2012"
+    }
+   ],
+   "queries_tried": [
+    "2012"
+   ],
+   "search_pattern": "time_anchor",
+   "failure_mode": "unspecified",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": "2012",
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "reddit:ootu6su": {
+   "i": 3,
+   "photo_type": "person_face_related",
+   "target_description": "The user is automating the discovery of hidden faces in Google Photos.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "identity_failure",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "medium",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": "run it on chunks.. lets say 5k each run"
+  },
+  "youtube:UgxKOx9ORbYpFY_ItsZ4AaABAg": {
+   "i": 4,
+   "photo_type": "unknown",
+   "target_description": "The user is asking whether trying the new AI search feature will reset their manually tagged faces and hidden strangers.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "identity_failure",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "medium",
+   "evidence_quotes": [
+    "I am afraid to try if I have to do all the faces amd names over."
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "reddit:p4il59h": {
+   "i": 5,
+   "photo_type": "unknown",
+   "target_description": "The user is commenting on a service outage.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "appstore:in:12842597590": {
+   "i": 6,
+   "photo_type": "unknown",
+   "target_description": "The user is complaining about the cluttered interface and lack of separate folders after an update.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "regression",
+   "severity": "inconvenience",
+   "outcome": "switched_product",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Apple team has successfully destroyed their once beautiful app with this update. Now photos looks like a cluttered messy container of mixed photos with impractical features.",
+    "I have started using paid version of third party app and also planning to migrate to Pixel next year"
+   ],
+   "photo_age": null,
+   "product_mentioned": "apple_photos",
+   "workaround": "started using paid version of third party app"
+  },
+  "gcomm:468756141:468756243": {
+   "i": 0,
+   "photo_type": "unknown",
+   "target_description": "The user wants to recover deleted photos and screen recording videos from the Google recycle bin.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Please quickly respond and give me my photos and videos please"
+   ],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "gcomm:467933552:468083172": {
+   "i": 0,
+   "photo_type": "unknown",
+   "target_description": "The item is a support reply providing instructions on how to recover deleted photos.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "youtube:UgyGjnV2V9Xj8eM2Ty14AaABAg": {
+   "i": 1,
+   "photo_type": "unknown",
+   "target_description": "The user is trying to find edited photos that no longer stay in their main photos view.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "unspecified",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "When i edited my photos they used to stay in photos, now i can't find them."
+   ],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "gcomm:461988088": {
+   "i": 2,
+   "photo_type": "unknown",
+   "target_description": "The user is trying to find a photo by searching for a custom caption they added to it.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "descriptive",
+   "failure_mode": "vocabulary_mismatch",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "When I search by the caption I added to my photo, the search result does not work and yields unrelated results, even days after adding the caption."
+   ],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "youtube:Ugzo1vfeTy9ICPpzCb54AaABAg": {
+   "i": 3,
+   "photo_type": "received_forwarded",
+   "target_description": "The user is trying to recover or find WhatsApp photos and screenshots using a recovery method.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "content_type_gap",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "When i try this  all the photos come up and what's app photos and screenshorts didn't come up what should i do\ud83d\ude22"
+   ],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "reddit:p3cijqi": {
+   "i": 4,
+   "photo_type": "migrated",
+   "target_description": "The reply explains why certain photos are missing from a Google Takeout export of a shared album.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "youtube:Ugz1Hl0tVMiIzZeKo5h4AaABAg": {
+   "i": 5,
+   "photo_type": "migrated",
+   "target_description": "The user is commenting on a tool that fixes broken dates on downloaded Google Photos.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": "running it through PDR"
+  },
+  "gcomm:452905933:461556534": {
+   "i": 6,
+   "photo_type": "unknown",
+   "target_description": "The user is trying to find an important photo that was buried by layout changes in the grid.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "ranking_failure",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "It changed my grid just when I was looking for an important photo. I couldn't find it. It was buried by some dumb photo Google felt the need to emphasize."
+   ],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "play:28c72136-6fdf-4791-92a3-a165dbfc477c": {
+   "i": 7,
+   "photo_type": "unknown",
+   "target_description": "The user cannot find a photo located in a specific folder.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "unspecified",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "cant find photo in some folder"
+   ],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "gcomm:465289959": {
+   "i": 0,
+   "photo_type": "unknown",
+   "target_description": "Trying to find photos taken in 2012.",
+   "cues": [
+    {
+     "type": "when",
+     "value": "2012",
+     "status": "remembered",
+     "quote": "photos tken in 2012"
+    }
+   ],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "unspecified",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "how to find photos tken in 2012",
+    "trying to find photos taken in 2012"
+   ],
+   "photo_age": "from 2012",
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "gcomm:468390761:468398049": {
+   "i": 1,
+   "photo_type": "unknown",
+   "target_description": "How to search and delete exact duplicate photos and videos",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "appstore:gb:12046483865": {
+   "i": 2,
+   "photo_type": "unknown",
+   "target_description": "Check whether a photo from 3 weeks ago is in an album manually.",
+   "cues": [
+    {
+     "type": "when",
+     "value": "3 weeks ago",
+     "status": "remembered",
+     "quote": "a photo from 3 weeks ago"
+    }
+   ],
+   "queries_tried": [],
+   "search_pattern": "other",
+   "failure_mode": "regression",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "It used to be well structured and organised, but now, for example, if you wish to look at a photo from 3 weeks ago and check whether the photo is in an album manually, you can no longer change tabs to check the album and return to where you left off."
+   ],
+   "photo_age": "3 weeks ago",
+   "product_mentioned": "Apple Photos",
+   "workaround": null
+  },
+  "play:ff198b05-62a8-4c08-8829-5ba567a57be7": {
+   "i": 3,
+   "photo_type": "unknown",
+   "target_description": "Local backup of photos with background sync issue",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": "immich",
+   "workaround": null
+  },
+  "gcomm:468665459": {
+   "i": 4,
+   "photo_type": "unknown",
+   "target_description": "Recover permanently deleted data, photos and videos",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "gcomm:464978069:465005187": {
+   "i": 5,
+   "photo_type": "unknown",
+   "target_description": "Provide information about Locked Folder in Google Photos",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "reddit:ootui4g": {
+   "i": 6,
+   "photo_type": "person_face_related",
+   "target_description": "Automated discovery of thousands of hidden faces in Google Photos",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "identity_failure",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": "run it for chunks of 5k"
+  },
+  "reddit:1rxmauj": {
+   "i": 7,
+   "photo_type": "unknown",
+   "target_description": "Turn off an unspecified feature",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "gcomm:466807698:466807882": {
+   "i": 0,
+   "photo_type": "unknown",
+   "target_description": "Helper explaining how to recover deleted photos and check account backup.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "reddit:1vcu3cs": {
+   "i": 1,
+   "photo_type": "unknown",
+   "target_description": "Finding a specific photo in a large album.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "unspecified",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "low",
+   "evidence_quotes": [
+    "Finding specific photo in a large album"
+   ],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "gcomm:468268039": {
+   "i": 2,
+   "photo_type": "unknown",
+   "target_description": "Searching through personal photos for a specific image.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "unspecified",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "it appears that I can no longer search through my own photos for a specific image"
+   ],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "gcomm:461024694": {
+   "i": 3,
+   "photo_type": "unknown",
+   "target_description": "Recovering a permanently deleted screen recording video from almost a year ago.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "data_loss",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "reddit:p3syowl": {
+   "i": 4,
+   "photo_type": "received_forwarded",
+   "target_description": "Saving photos from small shared albums.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "gcomm:466300111:466343619": {
+   "i": 5,
+   "photo_type": "unknown",
+   "target_description": "Helper explaining how to find and permanently delete backed-up photos using the web interface.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "youtube:UgwpFaWjyEvWXb1YPA94AaABAg": {
+   "i": 6,
+   "photo_type": "scanned_print",
+   "target_description": "Praising a guide video on digitizing old photos.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "appstore:ca:14546165983": {
+   "i": 7,
+   "photo_type": "unknown",
+   "target_description": "Finding general objects like a tree or a table in a photo library.",
+   "cues": [],
+   "queries_tried": [
+    "tree",
+    "table"
+   ],
+   "search_pattern": "descriptive",
+   "failure_mode": "vocabulary_mismatch",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "The search on this app is worse than useless. It can\u2019t find anything besides people you have named.",
+    "Try finding a tree or a table and there\u2019s none in any of your 10000 pics."
+   ],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "reddit:1qbt12z": {
+   "i": 0,
+   "photo_type": "unknown",
+   "target_description": "Search has completely stopped working.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "regression",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Search has complete stopped working for me. So infuriating!"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "youtube:UgwAoZQT5kub7j5l9Z94AaABAg": {
+   "i": 1,
+   "photo_type": "scanned_print",
+   "target_description": "Scanned photos returned with missing information.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "this is a scan google giving back your photos with missing info only to have to pay to get it back...."
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "gcomm:468728450": {
+   "i": 2,
+   "photo_type": "unknown",
+   "target_description": "Today's captured photos are not showing, only a blurer image appears.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Today capture photos not showing only blurer image"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "reddit:olkmnge": {
+   "i": 3,
+   "photo_type": "unknown",
+   "target_description": "User is complaining that Google Photos search is worse since changing to AI search.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "regression",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Its definately worse since they changed search to ai. I used to be able to be very broad or specific and it would show all photos either way. now its a crapshoot."
+   ],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "gcomm:460847035:460850053": {
+   "i": 4,
+   "photo_type": "unknown",
+   "target_description": "Helper explaining how to find a photo seen in an automatic Google Photos slideshow.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": "Tap on the Share icon and create a link or share otherwise"
+  },
+  "reddit:paubuc3": {
+   "i": 5,
+   "photo_type": "migrated",
+   "target_description": "Helper suggesting a workaround for photos getting the wrong date upon transfer to a new phone.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "missing_wrong_metadata",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "medium",
+   "evidence_quotes": [
+    "The problem might be as the other redditor said that the date is being overriden to the date of transfer."
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": "I normally change th date of individual pics which are wrong"
+  },
+  "youtube:UgwDnBnxXzlzV3ym6Kl4AaABAg": {
+   "i": 6,
+   "photo_type": "unknown",
+   "target_description": "Comment complaining about a deleted photo recovery trick video.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "gcomm:466300111": {
+   "i": 7,
+   "photo_type": "unknown",
+   "target_description": "User is trying to find and permanently delete a photo from September 2025 that was deleted from mobile but still shows up when uploading via browser.",
+   "cues": [
+    {
+     "type": "when",
+     "value": "September 2025",
+     "status": "remembered",
+     "quote": "September 2025"
+    }
+   ],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "I can't find one of my photo which is of September 2025. I have deleted it..when I search it I can't find it anywhere"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "reddit:p3frad1": {
+   "i": 0,
+   "photo_type": "unknown",
+   "target_description": "The user is trying to permanently save a photo to their Google Photos library but it reverts when the page is refreshed.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "So it seems like the photos are not actually being saved to my library permanently."
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "gcomm:465678857:465691081": {
+   "i": 1,
+   "photo_type": "person_face_related",
+   "target_description": "The helper is explaining how to fix or restore name search in the People & Pets tab.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "identity_failure",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "To fix or restore name search in the Google Photos \"People & Pets\" tab on Android:"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "gcomm:468107381": {
+   "i": 2,
+   "photo_type": "unknown",
+   "target_description": "The user is trying to find or delete old pictures from 2019.",
+   "cues": [
+    {
+     "type": "when",
+     "value": "2019",
+     "status": "remembered",
+     "quote": "2019year delete photo"
+    }
+   ],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "unspecified",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "low",
+   "evidence_quotes": [
+    "2019year old pic bek"
+   ],
+   "photo_age": "2019",
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "reddit:p2i0nn0": {
+   "i": 3,
+   "photo_type": "unknown",
+   "target_description": "The helper suggests deactivating AI functionality to revert the search behavior.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "regression",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "you can deactivate the AI functionally and the search reverts to the usual"
+   ],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "play:330798ac-4617-489e-a59c-677188bf8b5f": {
+   "i": 4,
+   "photo_type": "unknown",
+   "target_description": "The user is trying to retrieve lost pictures from Amazon Photos.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "data_loss",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "I've lost many pictures that I can't retrieve."
+   ],
+   "photo_age": null,
+   "product_mentioned": "amazon_photos",
+   "workaround": null
+  },
+  "youtube:Ugw6sDDwr-l841GaB0x4AaABAg": {
+   "i": 5,
+   "photo_type": "unknown",
+   "target_description": "The user is asking how to choose different backup qualities for different photos.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "I have been trying to figure out how to choose different quality backups for different photos."
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "reddit:omxuroz": {
+   "i": 0,
+   "photo_type": "person_face_related",
+   "target_description": "The user shares a method to automate the discovery of untagged faces in Google Photos.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "No auto tagging, it just give you a CSV file of all untagged faces, so instead you go over your entire library to find pictures with untagged faces, now you have a file with all untagged faces"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": "Automation script generating a CSV file of untagged faces"
+  },
+  "reddit:1wjneml": {
+   "i": 7,
+   "photo_type": "migrated",
+   "target_description": "The user is trying to find missing photos and fix incorrect dates after switching phones and using backup.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "missing_wrong_metadata",
+   "severity": "time_loss",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "the folders aren't there, the photos are left at the wrong dates",
+    "I also need all those photos and videos that are still on the old phone"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "gcomm:466805790:466891724": {
+   "i": 0,
+   "photo_type": "person_face_related",
+   "target_description": "Fix issues where some photos are not showing in the People section.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "identity_failure",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "reddit:p15r1a1": {
+   "i": 1,
+   "photo_type": "unknown",
+   "target_description": "Find a specific photo in a large album more easily.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": "add it to your favorites"
+  },
+  "youtube:Ugz63tje_M8ZqFBkfoF4AaABAg": {
+   "i": 2,
+   "photo_type": "migrated",
+   "target_description": "Transfer photos to another account using a script.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "gcomm:468646507:468707361": {
+   "i": 3,
+   "photo_type": "unknown",
+   "target_description": "Recover permanently deleted photos from the recycle bin.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "appstore:in:13733620789": {
+   "i": 4,
+   "photo_type": "unknown",
+   "target_description": "Delete a specific photo album from the cloud without affecting local device storage.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "reddit:p1578u2": {
+   "i": 5,
+   "photo_type": "unknown",
+   "target_description": "Ask whether search can be used to look for something remembered in a scene.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "unspecified",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "medium",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "gcomm:468646507:468706793": {
+   "i": 6,
+   "photo_type": "unknown",
+   "target_description": "Recover permanently deleted photos and videos.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "reddit:nm8ak6t": {
+   "i": 7,
+   "photo_type": "unknown",
+   "target_description": "Understand why old photos disappeared from an iPhone and whether they can be recovered.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "data_loss",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "gcomm:468633669": {
+   "i": 0,
+   "photo_type": "unknown",
+   "target_description": "Recover permanently deleted photos and videos.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Recover my parmanet delete photos and videos"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google photos",
+   "workaround": null
+  },
+  "gcomm:468115002": {
+   "i": 1,
+   "photo_type": "unknown",
+   "target_description": "Find duplicated photos resulting from copying photos to different folders in the past.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Can I run a search to locate duplicated photos?"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google photos",
+   "workaround": null
+  },
+  "youtube:UgxXkq2jEdDD83nyoVx4AaABAg": {
+   "i": 2,
+   "photo_type": "unknown",
+   "target_description": "Organize, safe-keep, and find a way to enjoy a large collection of family photos, slides, audio tapes, and videos.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "I have 171,000 pictures and videos on my phone right now."
+   ],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "youtube:Ugznad0QDaxTJEbGLHZ4AaABAg": {
+   "i": 3,
+   "photo_type": "unknown",
+   "target_description": "Recover deleted photos.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "all deleted photos came back"
+   ],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "gcomm:465306929": {
+   "i": 4,
+   "photo_type": "unknown",
+   "target_description": "Use global search in supervised child accounts to find photos.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_indexed",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "typing any keyword, date, or category into the search bar instantly returns a blank \"No Results\" error."
+   ],
+   "photo_age": null,
+   "product_mentioned": "google photos",
+   "workaround": null
+  },
+  "reddit:p3co1s6": {
+   "i": 5,
+   "photo_type": "unknown",
+   "target_description": "Export a complete shared album from Google Photos using Google Takeout.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "They will only be included in your Takeout archives if you've saved the items from the album to your account."
+   ],
+   "photo_age": null,
+   "product_mentioned": "google photos",
+   "workaround": null
+  },
+  "appstore:us:14387414782": {
+   "i": 6,
+   "photo_type": "migrated",
+   "target_description": "Import a large library from Google Photos or Apple Photos into Ente and add pictures to shared albums.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "missing_wrong_metadata",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "expect about 1% of your pictures to end up with a wrong date (the date of the takeout request) and no other metadata."
+   ],
+   "photo_age": null,
+   "product_mentioned": "google photos",
+   "workaround": null
+  },
+  "play:8c8e7650-2ebe-4940-83c9-05cb6c6f9e25": {
+   "i": 7,
+   "photo_type": "unknown",
+   "target_description": "View daily photos and videos and perform searches in the app.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "unspecified",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "app seems frozen. is showing daily, but is not displaying photos or videos, nor allowing searching."
+   ],
+   "photo_age": null,
+   "product_mentioned": "amazon photos",
+   "workaround": null
+  },
+  "appstore:gb:12740308505": {
+   "i": 0,
+   "photo_type": "unknown",
+   "target_description": "Praise for a dedicated photo service and its machine learning search.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Was looking for a dedicated photo service for a long time and seen Ente recommended and I\u2019m glad I subscribed, I like the machine learning included and the fact it plays my iCloud videos flawlessly."
+   ],
+   "photo_age": null,
+   "product_mentioned": "ente",
+   "workaround": null
+  },
+  "gcomm:468643217": {
+   "i": 1,
+   "photo_type": "unknown",
+   "target_description": "Recover deleted photos.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "I want to recover my deleted photos"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "reddit:1s96iwh": {
+   "i": 2,
+   "photo_type": "unknown",
+   "target_description": "Revert AI search changes to normal search.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "regression",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "how do I get normal search back instead of this gemini crap?"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "reddit:p1cphsg": {
+   "i": 3,
+   "photo_type": "received_forwarded",
+   "target_description": "Make photos show up in the iMessage photos tab.",
+   "cues": [],
+   "queries_tried": [
+    "photos"
+   ],
+   "search_pattern": "descriptive",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "i manually made them all show up my searching photos in the imessage search bar and clicking them all one by one"
+   ],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": "manually search photos in the imessage search bar and click them all one by one"
+  },
+  "gcomm:468716826": {
+   "i": 4,
+   "photo_type": "unknown",
+   "target_description": "Restore deleted photos and videos from bin history.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "I want to restore my deleted photos and videos \nFrom bin history"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "youtube:UgxwqX3XfpGU_YXTMGl4AaABAg": {
+   "i": 5,
+   "photo_type": "unknown",
+   "target_description": "Locate a menu option demonstrated in an AI search video.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Lost me at .42, the first step.  \"Bottom right of your bottom menus bar\", where do I find this??"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "gcomm:468736088": {
+   "i": 6,
+   "photo_type": "unknown",
+   "target_description": "Recover permanently deleted photos.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "I want to recover my permanently deleted photos please."
+   ],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "reddit:p14p536": {
+   "i": 7,
+   "photo_type": "unknown",
+   "target_description": "Chit-chat comment on a pixel photo thread.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Helpppp you ate him up \ud83d\ude2d\ud83d\ude2d\ud83d\ude2d"
+   ],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "appstore:us:14518771076": {
+   "i": 0,
+   "photo_type": "unknown",
+   "target_description": "Praise for Immich and noting a bug with video scrubbing in search.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "One bug right now I noticed is that when you search, you can\u2019t scrub through videos, but I think this is being fixed in a patch."
+   ],
+   "photo_age": null,
+   "product_mentioned": "immich",
+   "workaround": null
+  },
+  "play:ee2d5a0d-13e8-4f69-a2e7-5d6ac6ae2df2": {
+   "i": 1,
+   "photo_type": "unknown",
+   "target_description": "Finding photos by file name.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "vocabulary_mismatch",
+   "severity": "inconvenience",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "You can not search by file name now, which is annoying."
+   ],
+   "photo_age": null,
+   "product_mentioned": "Amazon Photos",
+   "workaround": null
+  },
+  "gcomm:460619399": {
+   "i": 2,
+   "photo_type": "screenshot_functional",
+   "target_description": "A question about why document videos are not saving.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Document Video don't save why"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "reddit:omxqodc": {
+   "i": 3,
+   "photo_type": "person_face_related",
+   "target_description": "Asking how face tagging works for subsequent photos after identifying a face.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "identity_failure",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Once you have identified a face, does it tag subsequent photos of that face?"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "gcomm:468426660:468434222": {
+   "i": 4,
+   "photo_type": "screenshot_functional",
+   "target_description": "A helper asking clarifying questions about missing screenshots.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "content_type_gap",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Are the screenshots missing directly from the Gallery, or are they only missing from Google Photos?"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "play:4767400a-b873-4d81-9a5e-1d4a9304e7cb": {
+   "i": 5,
+   "photo_type": "unknown",
+   "target_description": "Complaint about album shuffling and blank pictures in the gallery.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "The organized photo albums keep shuffling on themselves and sometimes the pictures in the gallery appear blank ,even if you click on the."
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "gcomm:468062315": {
+   "i": 6,
+   "photo_type": "migrated",
+   "target_description": "Accessing photos from Picasa 3 that are not being pulled by Airmor.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Airmor isn't getting all photos on my android phone. Doesn't pull Picasa 3 photo albums."
+   ],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "reddit:p30rgem": {
+   "i": 7,
+   "photo_type": "unknown",
+   "target_description": "Complaining about duplicate picture deletion behavior across devices.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "I also hate that I can\u2019t delete a duplicate picture without it deleting on my device, unless I turn off sync."
+   ],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": "turn off sync"
+  },
+  "reddit:otsdmgn": {
+   "i": 0,
+   "photo_type": "unknown",
+   "target_description": "Trying to fix a messaging photo issue based on previous troubleshooting steps.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "That didn't fix it :("
+   ],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "play:5e83389d-ca65-4e98-9f02-0603adca5dec": {
+   "i": 1,
+   "photo_type": "unknown",
+   "target_description": "Praising the app while noting a missing feature for powerful search.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "I only thing i miss on the app is powerful search of the google photos app."
+   ],
+   "photo_age": null,
+   "product_mentioned": "ente",
+   "workaround": null
+  },
+  "youtube:UgxzQwCXe7yr5mbWHFN4AaABAg": {
+   "i": 2,
+   "photo_type": "unknown",
+   "target_description": "Trying to navigate to storage to free up space.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "how do i navigate to the google photos that's been using the 15 gb? i want to free up space and i can't seem to navigate to it"
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "reddit:olk4ipw": {
+   "i": 3,
+   "photo_type": "unknown",
+   "target_description": "Commenting on poor search quality after Gemini integration.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "regression",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "They shoved Gemini into it and it's nowhere near as good."
+   ],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "gcomm:468729600": {
+   "i": 4,
+   "photo_type": "unknown",
+   "target_description": "Trying to find older albums that disappeared from the account.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "unspecified",
+   "severity": "data_loss",
+   "outcome": "not_found",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Lost photos from about 40 older albums",
+    "the photos from about 40 older albums have disappeared from Google Photos."
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "gcomm:462229864:462249778": {
+   "i": 5,
+   "photo_type": "unknown",
+   "target_description": "Providing troubleshooting instructions for a synchronization issue where recent app view is cut off.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "this is due to a Synchronisation issue and Google is aware of this and hope it will resolve soon."
+   ],
+   "photo_age": null,
+   "product_mentioned": "google_photos",
+   "workaround": null
+  },
+  "appstore:ca:11735709609": {
+   "i": 6,
+   "photo_type": "unknown",
+   "target_description": "Complaining about UI changes and navigation issues in the updated photos app.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "regression",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Single page ruins it all. Can no longer switch from viewing and album tab, because no more tabs. Impossible to find your spot after as it resets."
+   ],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "gcomm:468693763": {
+   "i": 7,
+   "photo_type": "unknown",
+   "target_description": "Requesting recovery of deleted photos and videos from trash history.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "Restore my delete photo video as trash history back please comnetiy"
+   ],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "youtube:Ugz3e__0s2v2b_aqQKB4AaABAg": {
+   "i": 0,
+   "photo_type": "unknown",
+   "target_description": "Trying to use the new Google Photos AI search feature on a Pixel 10.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "I don't have this feature on my phone"
+   ],
+   "photo_age": null,
+   "product_mentioned": "Google Photos",
+   "workaround": null
+  },
+  "reddit:olkax6r": {
+   "i": 1,
+   "photo_type": "unknown",
+   "target_description": "Trying to search for photos using object recognition.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "regression",
+   "severity": "inconvenience",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [
+    "All object recognition is completely gone."
+   ],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "gcomm:468390761": {
+   "i": 2,
+   "photo_type": "unknown",
+   "target_description": "How to search and delete exact duplicate photos and videos",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  },
+  "reddit:mu4di8d": {
+   "i": 3,
+   "photo_type": "unknown",
+   "target_description": "Discussing Apple's Find My app and photo geotagging in South Korea.",
+   "cues": [],
+   "queries_tried": [],
+   "search_pattern": "not_stated",
+   "failure_mode": "not_a_search_problem",
+   "severity": "unclear",
+   "outcome": "unclear",
+   "confidence": "high",
+   "evidence_quotes": [],
+   "photo_age": null,
+   "product_mentioned": null,
+   "workaround": null
+  }
+ },
+ "review": [],
+ "usage": {
+  "requests": 15,
+  "retries": 0,
+  "prompt_tokens": 52962,
+  "output_tokens": 17627
+ }
+}

@@ -1,0 +1,10 @@
+.env
+data/
+__pycache__/
+.venv/
+*.db
+.pytest_cache/
+
+# the slim snapshot used to host the Explorer is tracked on purpose
+!demo/
+!demo/engine.db

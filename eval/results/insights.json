@@ -1,0 +1,438 @@
+{
+ "versions": {
+  "taxonomy": "v1",
+  "taxonomy_sha": "53e4eb69",
+  "prompt_relevance_sha": "1fcb6ab2",
+  "prompt_extraction_sha": "f5b98bb7"
+ },
+ "insights": [
+  {
+   "id": "triage",
+   "headline": "61% of complaints that first looked like search problems were not about finding photos.",
+   "so_what": "",
+   "caveat": "",
+   "confidence": "high",
+   "n": 740,
+   "sources": 7,
+   "weak": false,
+   "written_by_llm": false,
+   "plain_text": false,
+   "facts": {
+    "first_pass_called_retrieval": 740,
+    "on_closer_reading_not_a_search_problem": 455,
+    "share_pct": 61,
+    "what_those_posts_were_about_pct_keyword_guess": {
+     "something else or unclear": 36,
+     "praise or no problem": 22,
+     "app bug, layout or update": 15,
+     "recovering deleted photos": 12,
+     "sync, backup or upload": 9,
+     "account, storage or billing": 5
+    }
+   },
+   "quotes": [
+    {
+     "item_id": "youtube:Ugzo1vfeTy9ICPpzCb54AaABAg",
+     "source": "youtube",
+     "quote": "When i try this all the photos come up and what's app photos and screenshorts didn't come up what should i do\ud83d\ude22",
+     "url": "https://www.youtube.com/watch?v=7X63jxS8ewE&lc=Ugzo1vfeTy9ICPpzCb54AaABAg"
+    },
+    {
+     "item_id": "appstore:ca:14495666647",
+     "source": "appstore",
+     "quote": "The locations of photos not known and cannot be known for easily access , resulting photos duplicated everywhere.",
+     "url": "https://itunes.apple.com/ca/review?id=1584215428&type=Purple%20Software"
+    },
+    {
+     "item_id": "appstore:us:11722224796",
+     "source": "appstore",
+     "quote": "Select recents. Select a folder. It doesn\u2019t open the folder.",
+     "url": "https://itunes.apple.com/us/review?id=327630330&type=Purple%20Software"
+    }
+   ]
+  },
+  {
+   "id": "unmet",
+   "headline": "Although 14 percent of posts about incorrect search results mention a workaround, posts regarding general difficulty locating media and missing old photos have a zero percent workaround rate.",
+   "so_what": "This indicates that certain types of media location failures leave posts completely without solutions, making these areas critical to investigate. Understanding why these specific categories lack workarounds could help address the most severe finding failures.",
+   "caveat": "The analysis is limited by the small sample size of 14 posts for general difficulty locating media and 20 posts for missing old photos and screenshots.",
+   "confidence": "medium",
+   "n": 34,
+   "sources": 4,
+   "weak": false,
+   "written_by_llm": true,
+   "plain_text": false,
+   "facts": {
+    "clusters_not_found_70_plus_and_workaround_under_5": {
+     "General Difficulty Locating Media": {
+      "items": 14,
+      "not_found_pct": 86,
+      "workaround_pct": 0
+     },
+     "Missing Old Photos and Screenshots": {
+      "items": 20,
+      "not_found_pct": 70,
+      "workaround_pct": 0
+     }
+    },
+    "clusters_with_most_workarounds_pct": {
+     "Search returns nothing, wrong or irrelevant results": 14,
+     "People and face recognition, grouping and naming problems": 10
+    },
+    "overall_not_found_pct": 53,
+    "overall_with_workaround_pct": 7
+   },
+   "quotes": [
+    {
+     "item_id": "appstore:au:13880317298",
+     "source": "appstore",
+     "quote": "it takes me almost 5 minutes to find the picture I really want",
+     "url": "https://itunes.apple.com/au/review?id=1584215428&type=Purple%20Software"
+    },
+    {
+     "item_id": "gcomm:437015100",
+     "source": "google_community",
+     "quote": "My old photos and video of 2013 are not showing",
+     "url": "https://support.google.com/photos/thread/437015100"
+    },
+    {
+     "item_id": "play:28c72136-6fdf-4791-92a3-a165dbfc477c",
+     "source": "play",
+     "quote": "cant find photo in some folder",
+     "url": "https://play.google.com/store/apps/details?id=io.ente.photos&reviewId=28c72136-6fdf-4791-92a3-a165dbfc477c"
+    }
+   ]
+  },
+  {
+   "id": "change",
+   "headline": "Only 20 percent of the 287 failure posts use wording signaling that something changed, though this rises to 56 percent for posts about updates removing or rearranging browsing features.",
+   "so_what": "This suggests that finding failures are commonly related to long-standing issues rather than recent updates or changes. Investigating persistent, unchanged system behaviors may yield more improvement than focusing solely on recent updates.",
+   "caveat": "This finding is limited because some clusters, such as general difficulty locating media, had zero percent of posts using change-related wording.",
+   "confidence": "medium",
+   "n": 58,
+   "sources": 7,
+   "weak": false,
+   "written_by_llm": true,
+   "plain_text": false,
+   "facts": {
+    "failures": 287,
+    "wording_signals_something_changed": 58,
+    "share_pct": 20,
+    "share_of_each_cluster_that_uses_change_wording_pct": {
+     "Search returns nothing, wrong or irrelevant results": 10,
+     "Update removed or rearranged browsing features": 56,
+     "General Difficulty Locating Media": 0,
+     "Finding and Ordering Photos by Metadata": 8,
+     "Broken Search and Error Messages": 4,
+     "People and face recognition, grouping and naming problems": 22,
+     "Missing Old Photos and Screenshots": 0,
+     "Broken keyword and image search": 31,
+     "AI (Gemini) search replaced or worsened classic search": 52
+    }
+   },
+   "quotes": [
+    {
+     "item_id": "appstore:ca:12686933450",
+     "source": "appstore",
+     "quote": "Now, the search function no longer works!",
+     "url": "https://itunes.apple.com/ca/review?id=1584215428&type=Purple%20Software"
+    },
+    {
+     "item_id": "gcomm:430794074",
+     "source": "google_community",
+     "quote": "When I get a memory suggestion for my photos, why doesn\u2019t it show that to me when I click on it?  It used to, now it takes me to the homepage and I never see the memory\u2019s",
+     "url": "https://support.google.com/photos/thread/430794074"
+    },
+    {
+     "item_id": "hackernews:46165697",
+     "source": "hackernews",
+     "quote": "Now it returns fewer matches on the same search. I tend to search the same things a few times a year as a supplement to some story and it's been frustrating to see in real time, a picture that used to come up when searching \"car\" or \"guitar\" is missing and instead unrelated pictures returned.",
+     "url": "https://news.ycombinator.com/item?id=46165697"
+    }
+   ]
+  },
+  {
+   "id": "detail",
+   "headline": "Forum and Reddit posts provide more diagnostic detail than store reviews, with 23 percent stating a cue and 15 percent quoting a query compared to just 7 percent and 3 percent in store reviews.",
+   "so_what": "This suggests that analysts looking to understand the specific context of finding failures should focus on forum discussions rather than store reviews. Investigating forums will provide more concrete examples of what posts were searching for when they failed.",
+   "caveat": "The comparison is limited because both sources share the exact same median length of 45 words per post.",
+   "confidence": "high",
+   "n": 282,
+   "sources": 6,
+   "weak": false,
+   "written_by_llm": true,
+   "plain_text": false,
+   "facts": {
+    "store_reviews": {
+     "failures": 73,
+     "cause_not_given_pct": 34,
+     "state_a_cue_pct": 7,
+     "quote_a_query_pct": 3,
+     "median_words": 45
+    },
+    "forums_and_reddit": {
+     "failures": 209,
+     "cause_not_given_pct": 27,
+     "state_a_cue_pct": 23,
+     "quote_a_query_pct": 15,
+     "median_words": 45
+    }
+   },
+   "quotes": [
+    {
+     "item_id": "appstore:au:13880317298",
+     "source": "appstore",
+     "quote": "it takes me almost 5 minutes to find the picture I really want",
+     "url": "https://itunes.apple.com/au/review?id=1584215428&type=Purple%20Software"
+    },
+    {
+     "item_id": "play:28c72136-6fdf-4791-92a3-a165dbfc477c",
+     "source": "play",
+     "quote": "cant find photo in some folder",
+     "url": "https://play.google.com/store/apps/details?id=io.ente.photos&reviewId=28c72136-6fdf-4791-92a3-a165dbfc477c"
+    },
+    {
+     "item_id": "gcomm:437393828",
+     "source": "google_community",
+     "quote": "After an update, searches only look for people, not things.",
+     "url": "https://support.google.com/photos/thread/437393828"
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "headline": "Apple Photos posts complain about updates removing or rearranging browsing features 24 percentage points more than Google Photos posts, while Google Photos posts complain about people and face recognition 20 percentage points more than Apple Photos posts.",
+   "so_what": "This suggests that the two platforms suffer from distinct types of finding failures, with one struggling more with interface changes and the other with recognition features. Investigating these platform-specific pain points can help target platform-specific fixes.",
+   "caveat": "This comparison is limited by the unequal sample sizes of 161 Google Photos failures compared to only 40 Apple Photos failures.",
+   "confidence": "medium",
+   "n": 40,
+   "sources": 4,
+   "weak": false,
+   "written_by_llm": true,
+   "plain_text": false,
+   "facts": {
+    "google_photos_failures": 161,
+    "apple_photos_failures": 40,
+    "apple_share_minus_google_share_pct_points": {
+     "Update removed or rearranged browsing features": 24,
+     "Broken keyword and image search": 4
+    },
+    "google_share_minus_apple_share_pct_points": {
+     "People and face recognition, grouping and naming problems": 20,
+     "Missing Old Photos and Screenshots": 11
+    },
+    "google_top_clusters_pct": {
+     "Search returns nothing, wrong or irrelevant results": 22,
+     "People and face recognition, grouping and naming problems": 22,
+     "Broken Search and Error Messages": 11,
+     "Update removed or rearranged browsing features": 11
+    },
+    "apple_top_clusters_pct": {
+     "Update removed or rearranged browsing features": 35,
+     "Search returns nothing, wrong or irrelevant results": 22,
+     "Broken Search and Error Messages": 15,
+     "Finding and Ordering Photos by Metadata": 10
+    }
+   },
+   "quotes": [
+    {
+     "item_id": "reddit:1urknr9",
+     "source": "reddit",
+     "quote": "Search in iphone not working",
+     "url": "https://www.reddit.com/r/iphone/comments/1urknr9/search_in_iphone_not_working/"
+    },
+    {
+     "item_id": "appstore:au:13423005278",
+     "source": "appstore",
+     "quote": "I saved a png file to camera role 3 times today. Only the third one came up in the photos.",
+     "url": "https://itunes.apple.com/au/review?id=1584215428&type=Purple%20Software"
+    }
+   ]
+  },
+  {
+   "id": "recency",
+   "headline": "While 70 percent of all failure posts occurred in the last six months, 100 percent of posts about missing old photos and screenshots were from this recent period.",
+   "so_what": "This suggests that certain finding issues are highly concentrated in recent months, pointing to recent system changes or updates as potential areas of concern. Investigating why these specific issues have suddenly emerged can help resolve recent regressions.",
+   "caveat": "This finding is limited because some issues, such as finding and ordering photos by metadata, had only 44 percent of posts occurring in the last six months.",
+   "confidence": "high",
+   "n": 83,
+   "sources": 5,
+   "weak": false,
+   "written_by_llm": true,
+   "plain_text": false,
+   "facts": {
+    "failures_from_last_6_months_pct": 70,
+    "newest_clusters_last_6_months_pct": {
+     "Missing Old Photos and Screenshots": 100,
+     "People and face recognition, grouping and naming problems": 95,
+     "AI (Gemini) search replaced or worsened classic search": 87
+    },
+    "least_recent_cluster_pct": {
+     "Finding and Ordering Photos by Metadata": 44
+    }
+   },
+   "quotes": [
+    {
+     "item_id": "appstore:gb:14544646523",
+     "source": "appstore",
+     "quote": "After updating to 26.5, trips have disappeared across all devices! Now already named people get UNRECOGNISED!!",
+     "url": "https://itunes.apple.com/gb/review?id=1584215428&type=Purple%20Software"
+    },
+    {
+     "item_id": "gcomm:430877696",
+     "source": "google_community",
+     "quote": "Previously, my photos were automatically organized into face groups for my family members. However, all face groupings have now disappeared, and the feature is no longer functioning as expected.",
+     "url": "https://support.google.com/photos/thread/430877696"
+    },
+    {
+     "item_id": "play:37c17711-6778-4c9b-a9c2-3a13f895ecb9",
+     "source": "play",
+     "quote": "Search needs better options for names of people, which currently requires creating an album of each person, with multiple versions created of individuals all too frequently.",
+     "url": "https://play.google.com/store/apps/details?id=com.amazon.clouddrive.photos&reviewId=37c17711-6778-4c9b-a9c2-3a13f895ecb9"
+    }
+   ]
+  },
+  {
+   "id": "search_by",
+   "headline": "Out of 70 posts stating how they searched, 38 posts used a descriptive keyword while only 12 posts searched by a year or date.",
+   "so_what": "This suggests that posts rely heavily on descriptive nouns rather than temporal cues when trying to locate photos. Investigating how well systems index and retrieve specific objects or nouns is therefore a high-priority area.",
+   "caveat": "This finding is limited because only 70 posts explicitly stated how they searched.",
+   "confidence": "high",
+   "n": 70,
+   "sources": 5,
+   "weak": false,
+   "written_by_llm": true,
+   "plain_text": false,
+   "facts": {
+    "failures_stating_how_they_searched": 70,
+    "descriptive_keyword": 38,
+    "year_or_date": 12,
+    "browse_after_broad_search": 7,
+    "most_common_words_in_typed_queries_posts_containing_each": {
+     "dog": 6,
+     "car": 2,
+     "beach": 2,
+     "photos": 2,
+     "taken": 2,
+     "home": 2
+    }
+   },
+   "quotes": [
+    {
+     "item_id": "appstore:au:14506956127",
+     "source": "appstore",
+     "quote": "if I search in Google photos I can find anything eg searched for Nokia phone but in Apple photos can\u2019t find anything.",
+     "url": "https://itunes.apple.com/au/review?id=1584215428&type=Purple%20Software"
+    },
+    {
+     "item_id": "gcomm:437393828",
+     "source": "google_community",
+     "quote": "After an update, searches only look for people, not things.",
+     "url": "https://support.google.com/photos/thread/437393828"
+    },
+    {
+     "item_id": "hackernews:41947777",
+     "source": "hackernews",
+     "quote": "Google photos search doesn't work well at all for me.",
+     "url": "https://news.ycombinator.com/item?id=41947777"
+    }
+   ]
+  },
+  {
+   "id": "pain",
+   "headline": "Data or emotional loss is mentioned in 2 of 287 failures (1%) against 15 of 585 non-search posts (3%).",
+   "so_what": "Explicit stakes language is rare in both groups but about three times more common in recovery, sync and other non-search posts than in search failures.",
+   "caveat": "Severity is assigned by the extraction model and most posts do not state stakes, so this counts only explicit loss language.",
+   "confidence": "low",
+   "n": 17,
+   "sources": 5,
+   "weak": true,
+   "written_by_llm": false,
+   "plain_text": true,
+   "facts": {
+    "retrieval_failures": 287,
+    "with_data_or_emotional_loss_language": 2,
+    "share_of_failures_pct": 1,
+    "not_search_items": 585,
+    "not_search_with_data_or_emotional_loss_language": 15,
+    "share_of_not_search_pct": 3
+   },
+   "quotes": [
+    {
+     "item_id": "gcomm:468717478",
+     "source": "google_community",
+     "quote": "my important photos have been permanently deleted from Google Photos and the Bin is also empty",
+     "url": "https://support.google.com/photos/thread/468717478"
+    },
+    {
+     "item_id": "play:08146e97-2c71-4eb5-859f-e95bc0eba14a",
+     "source": "play",
+     "quote": "Where are my missing album pictures that I uploaded from my Galaxy phone !Still missing!!! Also all the pictures I purchased from you in your photo book Gone!",
+     "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.photos&reviewId=08146e97-2c71-4eb5-859f-e95bc0eba14a"
+    },
+    {
+     "item_id": "reddit:1gz0pm1",
+     "source": "reddit",
+     "quote": "I tried everything from recovery software to clearing data to searching in my files. NOTHING",
+     "url": "https://www.reddit.com/r/googlephotos/comments/1gz0pm1/i_cant_find_the_photos_i_took_today/"
+    }
+   ]
+  },
+  {
+   "id": "partial",
+   "headline": "8 posts say people or face search still works while other search does not.",
+   "so_what": "",
+   "caveat": "A small group matched by keywords; read the quotes before drawing conclusions.",
+   "confidence": "low",
+   "n": 8,
+   "sources": 3,
+   "weak": true,
+   "written_by_llm": false,
+   "plain_text": true,
+   "facts": {
+    "posts_saying_people_search_still_works_or_is_the_only_part_that_does": 8
+   },
+   "quotes": [
+    {
+     "item_id": "gcomm:437393828",
+     "source": "google_community",
+     "quote": "After an update, searches only look for people, not things.",
+     "url": "https://support.google.com/photos/thread/437393828"
+    },
+    {
+     "item_id": "play:c0a0fad8-815a-4944-9654-5dd57777ccf8",
+     "source": "play",
+     "quote": "Faces are not syncing correctly when I log into the Android app, only a few faces show in the search tab.",
+     "url": "https://play.google.com/store/apps/details?id=io.ente.photos&reviewId=c0a0fad8-815a-4944-9654-5dd57777ccf8"
+    },
+    {
+     "item_id": "reddit:olkax6r",
+     "source": "reddit",
+     "quote": "It is not even functional for me anymore, other than for people search. All object recognition is completely gone.",
+     "url": "https://www.reddit.com/r/googlephotos/comments/1tbymyw/why_does_gp_search_suck_so_bad/olkax6r/"
+    }
+   ]
+  },
+  {
+   "id": "blind",
+   "headline": "Only 34% of failures state a photo type, 6% a photo age and 24% how they searched; the whole corpus holds 3 forgotten cues.",
+   "so_what": "What people remember and forget, and anything specific to old photos, cannot be answered from public reviews and forums; it needs primary research such as a short survey or interviews.",
+   "caveat": "Absence from public posts does not mean people do not remember these things, only that they do not write them down.",
+   "confidence": "high",
+   "n": 287,
+   "sources": 7,
+   "weak": true,
+   "written_by_llm": false,
+   "plain_text": true,
+   "facts": {
+    "failures": 287,
+    "state_photo_type_pct": 34,
+    "state_photo_age_pct": 6,
+    "state_how_they_searched_pct": 24,
+    "forgotten_cues_in_whole_corpus": 3,
+    "not_google_photos_pct": 40
+   },
+   "quotes": []
+  }
+ ]
+}

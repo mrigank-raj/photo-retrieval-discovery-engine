@@ -1,0 +1,7 @@
+# What the hosted Explorer needs (Streamlit Community Cloud reads this file). Keep it small: the host has limited memory.
+streamlit>=1.50              # width="stretch" and st.segmented_control need a recent Streamlit
+altair>=5.3
+pandas>=2.2
+numpy>=2.0
+pyyaml>=6.0
+requests>=2.31

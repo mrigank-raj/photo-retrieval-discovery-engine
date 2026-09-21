@@ -1,0 +1,15 @@
+{
+ "models": {
+  "relevance": "gemini-3.5-flash-lite",
+  "extraction": "gemini-3.5-flash-lite"
+ },
+ "metrics": {
+  "relevance_precision": 0.6612903225806451,
+  "relevance_recall": 0.9111111111111111,
+  "relevance_agreement": 0.8133333333333334,
+  "extraction_failure_mode": 0.7373737373737373,
+  "extraction_outcome": 0.8585858585858586,
+  "extraction_photo_type": 0.8585858585858586,
+  "extraction_cue_precision": 0.75
+ }
+}

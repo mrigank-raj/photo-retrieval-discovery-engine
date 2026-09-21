@@ -1,0 +1,82 @@
+# Taxonomy v1 (v0 plus failure_mode `unspecified`, added in the Phase 3 pilot). Seeded from docs/context.md sections 4, 5 and 9. Expect changes after the Phase 3 pilot.
+# Every enum value has a one-line definition so the same text can go into extraction prompts.
+
+version: v1
+
+problem_family:
+  search_or_retrieval: The user is trying to find or re-find photos or videos that exist and a search or browse attempt failed or was hard.
+  backup_or_sync: Photos are not uploaded, not synced across devices, or the user is unsure whether they were backed up.
+  account_or_access_loss: The photos exist but the user cannot get into the account or device that holds them.
+  deletion_or_corruption: Photos were deleted, disappeared, or are damaged or unreadable.
+  quality_or_editing: About picture quality, compression, editing or camera.
+  billing_or_storage: About plans, storage limits or pricing, with no retrieval problem stated.
+  other: Not about photos, or too vague to place.
+
+photo_type:
+  early_digital: Early digital or pre-smartphone photo with sparse or missing metadata or a default camera name.
+  scanned_print: Scanned print, slide or negative, where the date is the scan date and there is no location.
+  migrated: Library moved between services or devices (for example Google Takeout) with metadata lost or changed.
+  received_forwarded: Photo received or downloaded (messaging apps, shared albums) rather than taken by the user.
+  screenshot_functional: Screenshot or functional image such as a receipt, ticket, ID, chat or document.
+  person_face_related: Retrieval framed around a specific person or pet, including faces that changed or are no longer present.
+  corrupted: File exists but is damaged, blank or unreadable.
+  unknown: The type of photo is not stated.
+
+cue_type:
+  who: A named person, relationship or group in the photo.
+  when: Date, year, season, life stage, relative time, or adjacency to another event.
+  where: Named place or type of place.
+  event: The occasion (birthday, wedding, trip) or specific moment.
+  appearance: What the photo looks like (colours, weather, clothing, setting, black and white).
+  provenance: Who took or sent it, which app or device it came from, or how it was created.
+  purpose: The function of the image (the receipt, the prescription, the whiteboard).
+  emotion: Emotional or narrative significance (the funny one, the last photo of someone).
+  text_in_photo: Words or numbers visible in the image.
+  negation: What the photo is not ("not the blurry one").
+
+cue_status:
+  remembered: The user states they know this detail.
+  forgotten: The user states they do not know or cannot remember it.
+  unknown: The text does not say either way.
+
+search_pattern:
+  broad_then_browse: Searches something broad (a person or year) and then scrolls the results.
+  time_anchor: Narrows by month, year or a nearby known event.
+  descriptive: Describes what the photo shows in words.
+  category_guess: Tries category names such as screenshot, receipt, video or document.
+  vocabulary_mismatch: Uses a word the system does not match (for example couch versus sofa).
+  conversational: Uses a natural-language or AI question.
+  other: A search behaviour that fits none of the above.
+  not_stated: The user does not describe how they searched.
+
+failure_mode:
+  not_indexed: Results are missing because indexing has not run or is stale.
+  vocabulary_mismatch: The user's words do not match the system's labels or interpretation.
+  ranking_failure: The photo exists and is findable but is not surfaced, or an AI summary replaces the photos.
+  missing_wrong_metadata: Wrong date, no location or stripped metadata, often after migration, scanning or forwarding.
+  identity_failure: Faces or pets are ungrouped, merged or unlabeled.
+  content_type_gap: Screenshots, documents, scans or videos are handled worse than camera photos.
+  cue_mismatch: The user remembers something the system cannot index (a feeling, a story, appearance, adjacency).
+  scale_or_speed: The library is too large to browse or search is too slow.
+  regression: Finding or browsing that used to work stopped working or got worse after an update or product change (look for words like used to, no longer, stopped working, since the update, worse now).
+  unspecified: A difficulty finding or reaching photos is stated but no cause or mechanism is given (for example "search sucks", "can't find my photo", or a how-to question about finding photos).
+  not_a_search_problem: The text is not about a failure to find photos, for example deletion recovery, backup, sync, account access, export, app bugs, praise, or anything else.
+
+severity:
+  inconvenience: Annoying but the user got there or can live with it.
+  time_loss: The person describes significant time spent or repeated effort. A frustrated complaint alone is inconvenience.
+  emotional_loss: The photo matters emotionally and its loss or unreachability is distressing.
+  data_loss: The user believes photos are permanently gone or unrecoverable.
+  unclear: Cannot be judged from the text.
+
+outcome:
+  found: The user eventually found the photo.
+  not_found: The person says they cannot find or get the photo or photos they are after. Not used for a helper reply, a question, or a general complaint about search quality.
+  abandoned: The user gave up searching or accepted the loss.
+  switched_product: The user moved to or plans to move to another product.
+  unclear: The text does not say.
+
+confidence:
+  high: The text states the point directly.
+  medium: The point is implied.
+  low: The point is inferred from thin or ambiguous text.

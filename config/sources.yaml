@@ -1,0 +1,136 @@
+# Source configuration and Phase 0 compliance decisions.
+# Checks were run on 2026-09-20. Re-check before any full-scale run.
+
+window_months: 36
+locales: [us, gb, in, au, ca]
+language: en
+
+# Products in scope. IDs verified in Phase 0:
+#  - ios_id: returned by the iTunes Search API (Google Photos and Apple Photos also returned live reviews from the RSS feed)
+#  - play_id: play.google.com listing returned HTTP 200
+products:
+  google_photos:  {name: Google Photos,   play_id: com.google.android.apps.photos, ios_id: 962194608}
+  apple_photos:   {name: Apple Photos,    play_id: null,                           ios_id: 1584215428}
+  amazon_photos:  {name: Amazon Photos,   play_id: com.amazon.clouddrive.photos,   ios_id: 621574163}
+  onedrive:       {name: Microsoft OneDrive, play_id: com.microsoft.skydrive,      ios_id: 477537958}
+  dropbox:        {name: Dropbox,         play_id: com.dropbox.android,            ios_id: 327630330}
+  ente:           {name: Ente Photos,     play_id: io.ente.photos,                 ios_id: 1542026904}
+  immich:         {name: Immich,          play_id: app.alextran.immich,            ios_id: 1613945652}
+  # Samsung Gallery: com.sec.android.gallery3d returned HTTP 404 on Google Play, so no store reviews.
+  # Covered only through Reddit and YouTube (see queries below).
+  samsung_gallery: {name: Samsung Gallery, play_id: null, ios_id: null}
+
+sources:
+  play:
+    enabled: true
+    tool: python google-play-scraper (v1.2.7, last released 2024-06-07); fallback Apify Play Store actor
+    note: The library is not recent; expect breakage and switch to the Apify actor if it fails in Phase 1.
+    per_app_limit: 10000
+    locales_note: Play reviews are not country-specific (five countries returned identical reviews), so each product is fetched once from the US store in English.
+    compliance: Public store pages; scraping is against Google's general terms, so keep volume modest and disclose the method.
+
+  appstore:
+    enabled: true
+    tool: iTunes customer-reviews RSS (JSON)
+    url_pattern: "https://itunes.apple.com/{cc}/rss/customerreviews/page={n}/id={ios_id}/sortby={mostrecent|mosthelpful}/json"
+    verified: Returned 50 reviews per page for Google Photos and Apple Photos.
+    known_limits: 500 reviews per app per country per sort (10 pages); no developer replies.
+    compliance: Official public feed.
+
+  google_community:
+    enabled: true
+    decision: Enabled by the project owner on 2026-09-20, at low volume, after being told Google's general terms reportedly restrict automated access. Disclose the method in the final write-up.
+    tool: >
+      A headless browser (Playwright) only clicks "View more" on category listing pages; each thread page is then fetched over plain HTTP
+      and parsed from the JSON the page embeds in `var thread_view='...'`. About one thread request every 2 seconds.
+    correction: >
+      Phase 0 wrongly said pages were "server-rendered" (only the title was checked). Thread text is not in the visible HTML;
+      it is in that embedded script data. Listing pagination is client-side, hence the browser click.
+    categories: [photos_searching, photos_restore]
+    robots_txt: support.google.com/robots.txt disallows only search/api/attachment paths; thread pages are not disallowed. The collector never uses /*/search.
+    terms: Google's general terms are reported to restrict automated access without permission. Not verified against the Help Community terms.
+    stores: Question and each reply as separate items (thread_id links them). No author names or profile data are read or stored.
+
+  apple_community:
+    enabled: false
+    reason: discussions.apple.com serves a "Security Verification" bot challenge to plain HTTP requests, and its sitemap returns HTTP 500. Getting past that means circumventing an access control, so this source is dropped for v1.
+    robots_txt: Thread pages are not disallowed, but /profile and /tags are.
+    substitute: Apple Photos coverage comes from its App Store reviews, Reddit (r/iphone, r/apple, r/ios, r/AppleHelp) and YouTube.
+
+  youtube:
+    enabled: true
+    tool: YouTube Data API v3 (official)
+    quota: 10000 units per day default; search.list costs 100 units, commentThreads.list costs 1 unit
+    compliance: Official API; follow YouTube API Services terms; do not keep cached data longer than allowed.
+
+  reddit:
+    enabled: true
+    tool: Apify actor automation-lab/reddit-scraper (primary); clearpath/reddit-search-scraper (fallback)
+    why_this_actor: >
+      Returns posts and comments with configurable comment depth; 4.8/5 rating and about 4,000 users at time of check.
+      Fallback returns posts and comments in one run at about $0.99 per 1,000 results.
+    caveats: >
+      Comment extraction is documented as best-effort (deep threads and "more comments" not guaranteed) and vote counts can be 0.
+      Comment pricing was not stated; run a tiny test in Phase 1 and read the bill before scaling.
+    robots_txt: >
+      www.reddit.com/robots.txt disallows all crawlers (User-agent * with Disallow /) and points to
+      Reddit's Public Content Policy and r/reddit4researchers.
+    compliance: >
+      Direct scraping is against Reddit's rules and Reddit has sued large scrapers. Decision made by the project owner to use Apify
+      at small, non-commercial scale. Disclose this in the final write-up.
+    subreddits: [GooglePhotos, iphone, DataHoarder, AppleHelp, genealogy, photorestoration, immich, selfhosted,
+                 photography, OneDrive, apple, ios, Android, androidapps, GooglePixel]
+    subreddits_status: Only the first four (GooglePhotos, iphone, apple, ios) have been searched so far; the rest are unverified.
+    verified_cost_usd: start 0.003 per run, 0.00115 per post, 0.000575 per comment (free tier); a 12-search pilot cost 0.12.
+    method: One actor run with many subreddit search URLs (one start fee). Queries always include the word "photos".
+    safety: Each run passes maxTotalChargeUsd and refuses to run if less than $0.25 of the monthly free credit would remain.
+    ordering_note: The pilot used the first four subreddits, so the `subs` and `queries` limits pick from the head of these lists.
+
+  stackexchange:
+    enabled: true
+    role: narrative-source test (Phase 4). Questions are written as detailed problem statements, so they may hold more memory cues.
+    tool: Stack Exchange API v2.3 search/advanced (official, free, about 300 requests a day without a key)
+    sites: [photo, apple, webapps, superuser, android, genealogy]
+    window_months: 120
+    window_note: Most matching questions are older than 36 months and are still valid for testing memory cues, so this source keeps 10 years. Analyses that compare over time must exclude or flag it.
+    compliance: Official API. Content is CC BY-SA, so keep the link with every item and attribute Stack Exchange contributors in the write-up.
+
+  hackernews:
+    enabled: true
+    role: narrative-source test (Phase 4). Long-form technical comments about photo apps.
+    tool: Hacker News search API on Algolia (public, free, no key)
+    compliance: Public API.
+
+queries:
+  community_and_reddit:
+    - can't find
+    - old photos
+    - search not working
+    - wrong date
+    - missing photos
+    - find old photo
+    - takeout
+    - face grouping
+    - people album
+    - text search
+    - Ask Photos
+    - indexing
+    - after update
+    - screenshots
+    - migrated
+    - lost my photos
+    - switched from google photos
+  # Reworked after the first pull: "find deleted photos" style queries returned recovery clickbait, not search problems.
+  youtube_video_discovery:
+    - google photos search not working
+    - google photos can't find photos
+    - Ask Photos google photos
+    - google photos search tips
+    - find old photos google photos
+    - google photos vs apple photos search
+    - iphone photos search not working
+    - apple photos can't find old photos
+    - google photos wrong date fix
+    - google takeout photos metadata
+    - organize old photos digitize scan
+    - google photos face grouping people search

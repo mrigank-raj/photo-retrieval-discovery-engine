@@ -1,0 +1,82 @@
+PROBLEM STATEMENT
+=================
+
+Project: Discovery Engine for Photo Retrieval
+Goal: Build an AI-powered system that analyzes user feedback and conversations about photo retrieval, at scale, and turns them into comparable, evidence-backed retrieval problems and opportunity areas.
+
+
+1. BACKGROUND
+-------------
+People now keep years, sometimes decades, of photos in cloud galleries and phone libraries (Google Photos, Apple Photos, Amazon Photos, OneDrive, and others). Libraries routinely reach tens of thousands of items. Capture is effortless; retrieval is not. Users regularly know a photo exists but cannot find it, and they voice this frustration in public: app store reviews, Reddit threads, community/support forums, social media, and YouTube comments.
+
+These conversations are a large, untapped body of evidence about how people actually remember, forget, and search for their photos. Today they are read anecdotally, or reduced to star ratings and sentiment scores, which say that users are unhappy but not why, for which kinds of photos, or what they were trying to do.
+
+
+2. THE PROBLEM
+--------------
+We do not have a systematic, evidence-based understanding of WHY photo retrieval fails for users, especially for older photos, and WHERE the biggest opportunities to fix it are.
+
+Specifically, we cannot yet answer, with real user evidence:
+
+  a. What kinds of old photos do users struggle to retrieve?
+  b. What information do people actually remember about a photo when they go looking for it?
+  c. What information have they forgotten (or never knew)?
+  d. How do users formulate searches when their memory is incomplete?
+  e. Which retrieval problems are most frequent, most severe, and most underserved by current products?
+
+Summarizing reviews or running sentiment analysis does not answer these questions. Sentiment tells us a user is angry; it does not tell us that they remember the year and the person but not the place, that the photo is a screenshot rather than a camera shot, or that the search failed because the photo was never labeled or backed up.
+
+
+3. WHAT WE ARE BUILDING
+-----------------------
+A discovery engine: an AI-native pipeline that ingests large volumes of public user discussion about photo retrieval and:
+
+  - Collects it from many public sources (Google Play and App Store reviews, Reddit, Google Photos community/support forums, social media, YouTube comments, other forums).
+  - Separates retrieval-related signal from noise (general complaints, billing, storage, unrelated content).
+  - Extracts structured retrieval evidence from each relevant post: what the user was trying to find, what they remembered, what they had forgotten, how they searched, what happened, and what they did next.
+  - Clusters and names distinct retrieval problems, and lets us compare them side by side (frequency, severity, memory cues involved, workarounds, product gaps).
+  - Keeps every finding traceable to real user quotes, so each opportunity area is backed by evidence and not by opinion.
+
+
+4. SCOPE
+--------
+In scope:
+  - Public, non-authenticated sources only.
+  - Retrieval of existing personal photos and videos: search, browse, recall, re-finding, and the metadata/memory cues that support them.
+  - Old and long-tail photos in particular (years-old, pre-smartphone scans, migrated, screenshots, shared/received photos).
+  - Cross-source comparison and cross-problem comparison.
+
+Out of scope (for now):
+  - Building a new photo-search product or model.
+  - Private user data or authenticated/community content that requires login to read.
+  - Pricing, storage-plan, and billing complaints, except where they directly cause a retrieval failure.
+  - General photo editing, sharing, or camera-quality feedback.
+
+
+5. SUCCESS CRITERIA
+-------------------
+The engine is successful if it can:
+
+  1. Produce a ranked, named set of distinct photo-retrieval problems, each supported by multiple real user quotes and source links.
+  2. Show what users remember vs. forget about a photo (people, place, time, event, appearance, context, source app, and so on), and how often each appears.
+  3. Show how users phrase searches under incomplete memory (query patterns and fallback behaviors).
+  4. Compare problems and opportunity areas on comparable dimensions, not just list them.
+  5. Go beyond summarization and sentiment: every insight is a structured, queryable finding, not a paragraph of prose.
+  6. Be repeatable: re-run on new data and get updated findings without redoing the analysis by hand.
+
+
+6. KEY CONSTRAINTS AND RISKS
+----------------------------
+  - Budget: zero. Every tool, API and model must run on a free tier; billing is never enabled. Volumes are sized to free-tier limits.
+  - Access: several sources (Reddit, X/Twitter, Facebook groups, YouTube) restrict or rate-limit scraping; terms of service and privacy must be respected.
+  - Bias: vocal, unhappy users are over-represented; different platforms skew differently (Play Store vs. Reddit vs. forums).
+  - Noise: most reviews are short, vague, or off-topic; retrieval signal is a small fraction of the corpus.
+  - Ambiguity: "I can't find my photos" can mean search failed, backup failed, sync failed, or photos were deleted. The engine must separate these.
+  - Evidence integrity: LLM extraction can hallucinate; every finding must link back to source text.
+
+
+7. DELIVERABLES
+---------------
+  - This problem statement.
+  - context.md: a thorough map of the problem space, used to design the engine.
+  - Subsequent artifacts (to be defined): data collection plan, extraction schema, taxonomy of retrieval problems, workflow design, and a first analysis run.

@@ -1,0 +1,43 @@
+# Zero-spend LLM configuration. Billing is never enabled on any provider.
+# Free-tier limits change often and sources disagree; confirm in each provider's dashboard and with `check-keys` in Phase 2.
+
+budget_usd: 0
+
+providers:
+  gemini:
+    role: primary
+    key_env: GEMINI_API_KEY
+    get_key: aistudio.google.com (Google account, no card)
+    models:
+      relevance: gemini-3.5-flash-lite
+      extraction: gemini-3.5-flash-lite
+      extraction_strong: gemini-3.5-flash
+    model_ids_status: >
+      Verified 2026-09-20 with real calls and JSON-schema output on this key: gemini-3.5-flash-lite, gemini-3.5-flash,
+      gemini-2.5-flash and gemini-3.1-flash-lite all worked. gemini-2.5-flash-lite returned 404 ("no longer available to new users").
+      Free-tier daily quotas are not exposed by the API and are still unmeasured; measure them in Phase 2.
+    gotchas: >
+      Thinking models spend output tokens on internal reasoning (gemini-3.5-flash used 153 thinking tokens on a trivial prompt;
+      gemini-2.5-flash returned an empty answer when maxOutputTokens was 20). Set maxOutputTokens generously or set thinkingBudget to 0.
+    reported_free_limits: >
+      Not what the sources said. Measured on this key (2026-09-20): gemini-3.5-flash and gemini-2.5-flash each allow only 20 requests
+      per day (quota GenerateRequestsPerDayPerProjectPerModel-FreeTier, limit 20). gemini-3.5-flash-lite allows 500 requests per day (measured; hit on 2026-09-21). Quotas are per model, so each model has its own allowance.
+      gemini-3.6-flash and gemini-3.8-flash returned 503 "high demand" on real workloads; gemini-3-flash-preview truncated its answers
+      (its thinking used up the output budget). Do not depend on those.
+    data_note: >
+      On the free tier, Google may use prompts and outputs to improve its products. Our inputs are public posts,
+      so this is acceptable, but never send anything private.
+
+  groq:
+    role: fallback (optional)
+    key_env: GROQ_API_KEY
+    get_key: console.groq.com (no card)
+    models:
+      relevance: openai/gpt-oss-120b
+    model_ids_status: Verified 2026-09-20 that openai/gpt-oss-120b appears in the model list for this key.
+    reported_free_limits: about 30 requests/min; per-day token caps apply.
+
+policy:
+  items_per_request: {relevance: 20, extraction: 8}
+  on_rate_limit: back off, stop for the day when the daily quota is used, resume next day
+  never: enable billing, add a card, or upgrade a plan

@@ -1,0 +1,1103 @@
+{
+ "weights": {
+  "frequency": 0.35,
+  "spread": 0.15,
+  "severity": 0.2,
+  "underserved": 0.2,
+  "recency": 0.1
+ },
+ "clusters": [
+  {
+   "id": 8,
+   "name": "Search returns nothing, wrong or irrelevant results",
+   "definition": "Search finds nothing, misses photos that exist, or returns wrong ones (objects, animals, file names, text in images, descriptions), with no update or change mentioned.",
+   "group": "search_quality",
+   "items": 59,
+   "threads": 53,
+   "sources": {
+    "appstore": 5,
+    "google_community": 21,
+    "hackernews": 11,
+    "play": 7,
+    "reddit": 12,
+    "stackexchange": 3
+   },
+   "products": {
+    "google_photos": 36,
+    "apple_photos": 9,
+    "unknown": 8,
+    "amazon_photos": 4
+   },
+   "failure_modes": {
+    "vocabulary_mismatch": 28,
+    "not_indexed": 15,
+    "ranking_failure": 12,
+    "cue_mismatch": 4
+   },
+   "photo_types": {
+    "person_face_related": 8,
+    "screenshot_functional": 5,
+    "early_digital": 1,
+    "received_forwarded": 1
+   },
+   "severity": {
+    "inconvenience": 48,
+    "time_loss": 11
+   },
+   "not_found_rate": 0.7288135593220338,
+   "workaround_rate": 0.13559322033898305,
+   "severity_score": 1.1864406779661016,
+   "recent_share": 0.6101694915254238,
+   "cues_remembered": {
+    "appearance": 21,
+    "when": 3,
+    "text_in_photo": 6,
+    "provenance": 2,
+    "where": 9,
+    "who": 4,
+    "purpose": 2,
+    "event": 2
+   },
+   "cues_forgotten": {},
+   "quotes": [
+    {
+     "item_id": "appstore:au:14506956127",
+     "source": "appstore",
+     "quote": "if I search in Google photos I can find anything eg searched for Nokia phone but in Apple photos can\u2019t find anything."
+    },
+    {
+     "item_id": "gcomm:430853685",
+     "source": "google_community",
+     "quote": "After uploading all my images and videos over 3 days, the Google photos search by faces doesnt work either."
+    },
+    {
+     "item_id": "hackernews:42540175",
+     "source": "hackernews",
+     "quote": "I actually couldn't get Photos address search to work right in my testing before writing my previous comment"
+    },
+    {
+     "item_id": "play:28d74cca-0514-46af-83c3-4c70c27f00d2",
+     "source": "play",
+     "quote": "Photo search is great if you can actually get to it, but all I see is today's memories."
+    },
+    {
+     "item_id": "reddit:1w5exw4",
+     "source": "reddit",
+     "quote": "Descriptions added to photos do not show in search results"
+    }
+   ],
+   "sources_with_quote": 5,
+   "score_parts": {
+    "frequency": 1.0,
+    "spread": 0.75,
+    "severity": 1.0,
+    "underserved": 0.61,
+    "recency": 0.3
+   },
+   "score": 0.816
+  },
+  {
+   "id": 5,
+   "name": "Update removed or rearranged browsing features",
+   "definition": "After an app update or redesign, layouts, albums, date labels, zoom levels, places or other browsing features were removed or rearranged, making photos harder to find. Includes complaints where the person did not say it used to work.",
+   "group": "regression",
+   "items": 39,
+   "threads": 32,
+   "sources": {
+    "appstore": 12,
+    "google_community": 10,
+    "hackernews": 3,
+    "play": 3,
+    "reddit": 8,
+    "stackexchange": 2,
+    "youtube": 1
+   },
+   "products": {
+    "google_photos": 17,
+    "apple_photos": 14,
+    "unknown": 5,
+    "amazon_photos": 3
+   },
+   "failure_modes": {
+    "regression": 31,
+    "unspecified": 8
+   },
+   "photo_types": {
+    "screenshot_functional": 2,
+    "received_forwarded": 2,
+    "person_face_related": 1
+   },
+   "severity": {
+    "inconvenience": 37,
+    "time_loss": 1,
+    "emotional_loss": 1
+   },
+   "not_found_rate": 0.48717948717948717,
+   "workaround_rate": 0.07692307692307693,
+   "severity_score": 1.0769230769230769,
+   "recent_share": 0.5128205128205128,
+   "cues_remembered": {
+    "when": 2,
+    "appearance": 4,
+    "who": 1,
+    "provenance": 1,
+    "purpose": 1
+   },
+   "cues_forgotten": {},
+   "quotes": [
+    {
+     "item_id": "appstore:ca:13755783095",
+     "source": "appstore",
+     "quote": "You removed the grouping by month. Hard to find picture nows."
+    },
+    {
+     "item_id": "gcomm:430794074",
+     "source": "google_community",
+     "quote": "When I get a memory suggestion for my photos, why doesn\u2019t it show that to me when I click on it?  It used to, now it takes me to the homepage and I never see the memory\u2019s"
+    },
+    {
+     "item_id": "hackernews:44965337",
+     "source": "hackernews",
+     "quote": "Additional my mail search and photo search broke with Apple Intelligence/iOS18 integration."
+    },
+    {
+     "item_id": "play:4ebe787f-657f-4ce3-ace9-d451dc4e18a9",
+     "source": "play",
+     "quote": "When viewing an individual photo from years ago, if I click off that photo then rather than retaining that time view the app goes automatically racing forward in time to resume today's date view!"
+    },
+    {
+     "item_id": "reddit:1v3gsds",
+     "source": "reddit",
+     "quote": "I can no longer search for photos by date"
+    }
+   ],
+   "sources_with_quote": 5,
+   "score_parts": {
+    "frequency": 0.49,
+    "spread": 1.0,
+    "severity": 0.41,
+    "underserved": 0.31,
+    "recency": 0.13
+   },
+   "score": 0.477
+  },
+  {
+   "id": 14,
+   "name": "General Difficulty Locating Media",
+   "definition": "Posts about struggling to find, filter, or access general photos, videos, hidden folders, or archived items.",
+   "group": "unspecified",
+   "items": 14,
+   "threads": 14,
+   "sources": {
+    "appstore": 4,
+    "google_community": 1,
+    "play": 9
+   },
+   "products": {
+    "amazon_photos": 4,
+    "google_photos": 3,
+    "ente": 3,
+    "apple_photos": 2
+   },
+   "failure_modes": {
+    "unspecified": 14
+   },
+   "photo_types": {
+    "early_digital": 1
+   },
+   "severity": {
+    "time_loss": 2,
+    "inconvenience": 12
+   },
+   "not_found_rate": 0.8571428571428571,
+   "workaround_rate": 0.0,
+   "severity_score": 1.1428571428571428,
+   "recent_share": 0.7857142857142857,
+   "cues_remembered": {},
+   "cues_forgotten": {},
+   "quotes": [
+    {
+     "item_id": "appstore:au:13880317298",
+     "source": "appstore",
+     "quote": "it takes me almost 5 minutes to find the picture I really want"
+    },
+    {
+     "item_id": "gcomm:468696040",
+     "source": "google_community",
+     "quote": "I can't find some of my pictures and videos"
+    },
+    {
+     "item_id": "play:28c72136-6fdf-4791-92a3-a165dbfc477c",
+     "source": "play",
+     "quote": "cant find photo in some folder"
+    },
+    {
+     "item_id": "appstore:ca:13835632545",
+     "source": "appstore",
+     "quote": "if you think you want to save it, or find it later - good luck. You will NEVER be able to view the video again as it will be lost forever."
+    },
+    {
+     "item_id": "appstore:gb:13977758900",
+     "source": "appstore",
+     "quote": "Useless as there is no way to filter or find your videos"
+    }
+   ],
+   "sources_with_quote": 3,
+   "score_parts": {
+    "frequency": 0.05,
+    "spread": 0.0,
+    "severity": 0.77,
+    "underserved": 1.0,
+    "recency": 0.62
+   },
+   "score": 0.432
+  },
+  {
+   "id": 3,
+   "name": "Finding and Ordering Photos by Metadata",
+   "definition": "This cluster includes issues where users cannot locate, sort, or correctly view photos and videos due to problems with dates, locations, captions, albums, or missing library items.",
+   "group": "metadata",
+   "items": 25,
+   "threads": 24,
+   "sources": {
+    "appstore": 2,
+    "google_community": 3,
+    "hackernews": 2,
+    "play": 1,
+    "reddit": 10,
+    "stackexchange": 5,
+    "youtube": 2
+   },
+   "products": {
+    "google_photos": 17,
+    "apple_photos": 4,
+    "ente": 1,
+    "immich": 1
+   },
+   "failure_modes": {
+    "missing_wrong_metadata": 25
+   },
+   "photo_types": {
+    "migrated": 11,
+    "received_forwarded": 2,
+    "scanned_print": 1,
+    "early_digital": 3
+   },
+   "severity": {
+    "inconvenience": 23,
+    "time_loss": 2
+   },
+   "not_found_rate": 0.56,
+   "workaround_rate": 0.08,
+   "severity_score": 1.08,
+   "recent_share": 0.44,
+   "cues_remembered": {
+    "where": 3,
+    "who": 1,
+    "when": 3,
+    "text_in_photo": 1
+   },
+   "cues_forgotten": {
+    "when": 1
+   },
+   "quotes": [
+    {
+     "item_id": "appstore:us:14387414782",
+     "source": "appstore",
+     "quote": "expect about 1% of your pictures to end up with a wrong date (the date of the takeout request) and no other metadata."
+    },
+    {
+     "item_id": "gcomm:435082313",
+     "source": "google_community",
+     "quote": "While Khulna city is correctly pinpointed on the map, it is not appearing in the main city list."
+    },
+    {
+     "item_id": "hackernews:41410411",
+     "source": "hackernews",
+     "quote": "No compatible libraries found, says the unhelpful error message."
+    },
+    {
+     "item_id": "play:63629071-bb5d-439a-805f-1f21c94120ee",
+     "source": "play",
+     "quote": "The dates shown on the app are not always correct, for example dated Jan 23rd will be found in Feb 3rd?"
+    },
+    {
+     "item_id": "reddit:11ga051",
+     "source": "reddit",
+     "quote": "New phone shows photos in the wrong dates"
+    }
+   ],
+   "sources_with_quote": 5,
+   "score_parts": {
+    "frequency": 0.29,
+    "spread": 1.0,
+    "severity": 0.43,
+    "underserved": 0.42,
+    "recency": 0.0
+   },
+   "score": 0.422
+  },
+  {
+   "id": 12,
+   "name": "Broken Search and Error Messages",
+   "definition": "Posts about search functions failing completely, returning no results, or throwing errors when looking up images.",
+   "group": "unspecified",
+   "items": 27,
+   "threads": 23,
+   "sources": {
+    "youtube": 1,
+    "reddit": 7,
+    "appstore": 1,
+    "google_community": 12,
+    "hackernews": 3,
+    "play": 3
+   },
+   "products": {
+    "google_photos": 17,
+    "apple_photos": 6,
+    "amazon_photos": 2,
+    "unknown": 2
+   },
+   "failure_modes": {
+    "unspecified": 27
+   },
+   "photo_types": {
+    "screenshot_functional": 1,
+    "person_face_related": 1
+   },
+   "severity": {
+    "inconvenience": 25,
+    "time_loss": 1,
+    "unclear": 1
+   },
+   "not_found_rate": 0.48148148148148145,
+   "workaround_rate": 0.0,
+   "severity_score": 1.037037037037037,
+   "recent_share": 0.8148148148148148,
+   "cues_remembered": {
+    "appearance": 1,
+    "where": 2
+   },
+   "cues_forgotten": {},
+   "quotes": [
+    {
+     "item_id": "youtube:UgzGKehizToueR_lbQB4AaABAg",
+     "source": "youtube",
+     "quote": "my searches have come up with nothing"
+    },
+    {
+     "item_id": "reddit:1urknr9",
+     "source": "reddit",
+     "quote": "Search in iphone not working"
+    },
+    {
+     "item_id": "appstore:in:13969891586",
+     "source": "appstore",
+     "quote": "Every #*%#*ng search does not help either. Trying to locate a photo waste damn time."
+    },
+    {
+     "item_id": "gcomm:433667075",
+     "source": "google_community",
+     "quote": "How do I perform a search?"
+    },
+    {
+     "item_id": "hackernews:46755195",
+     "source": "hackernews",
+     "quote": "Also, even the local search inside of Apple Photos doesn't work correctly either."
+    }
+   ],
+   "sources_with_quote": 5,
+   "score_parts": {
+    "frequency": 0.27,
+    "spread": 0.75,
+    "severity": 0.2,
+    "underserved": 0.36,
+    "recency": 0.67
+   },
+   "score": 0.385
+  },
+  {
+   "id": 1,
+   "name": "People and face recognition, grouping and naming problems",
+   "definition": "Faces are not detected, grouped or recognised correctly, people are mislabeled or merged, or people, places and things sections and names cannot be managed.",
+   "group": "identity",
+   "items": 40,
+   "threads": 29,
+   "sources": {
+    "google_community": 29,
+    "play": 3,
+    "reddit": 7,
+    "stackexchange": 1
+   },
+   "products": {
+    "google_photos": 35,
+    "unknown": 2,
+    "ente": 1,
+    "apple_photos": 1
+   },
+   "failure_modes": {
+    "identity_failure": 40
+   },
+   "photo_types": {
+    "person_face_related": 36,
+    "received_forwarded": 1,
+    "migrated": 1
+   },
+   "severity": {
+    "emotional_loss": 1,
+    "inconvenience": 34,
+    "unclear": 4,
+    "time_loss": 1
+   },
+   "not_found_rate": 0.3,
+   "workaround_rate": 0.1,
+   "severity_score": 1.075,
+   "recent_share": 0.95,
+   "cues_remembered": {
+    "who": 3
+   },
+   "cues_forgotten": {},
+   "quotes": [
+    {
+     "item_id": "gcomm:430877696",
+     "source": "google_community",
+     "quote": "Previously, my photos were automatically organized into face groups for my family members. However, all face groupings have now disappeared, and the feature is no longer functioning as expected."
+    },
+    {
+     "item_id": "play:c0a0fad8-815a-4944-9654-5dd57777ccf8",
+     "source": "play",
+     "quote": "Faces are not syncing correctly when I log into the Android app, only a few faces show in the search tab."
+    },
+    {
+     "item_id": "reddit:1q7ghbb",
+     "source": "reddit",
+     "quote": "Human face recognition stopped working for months \u2013 now fixed"
+    },
+    {
+     "item_id": "stackexchange:apple:386769",
+     "source": "stackexchange",
+     "quote": "on iPhone all pictures available, people search doesn't work (empty) results when selecting people"
+    },
+    {
+     "item_id": "gcomm:432622767",
+     "source": "google_community",
+     "quote": "Google photos unable to group photo by people faces"
+    }
+   ],
+   "sources_with_quote": 4,
+   "score_parts": {
+    "frequency": 0.41,
+    "spread": 0.25,
+    "severity": 0.4,
+    "underserved": 0.0,
+    "recency": 0.91
+   },
+   "score": 0.354
+  },
+  {
+   "id": 11,
+   "name": "Missing Old Photos and Screenshots",
+   "definition": "Posts about being unable to find specific older photos, screenshots, or media from particular years and dates.",
+   "group": "unspecified",
+   "items": 20,
+   "threads": 17,
+   "sources": {
+    "google_community": 13,
+    "play": 4,
+    "reddit": 3
+   },
+   "products": {
+    "google_photos": 17,
+    "onedrive": 2,
+    "amazon_photos": 1
+   },
+   "failure_modes": {
+    "unspecified": 20
+   },
+   "photo_types": {
+    "early_digital": 2,
+    "screenshot_functional": 4
+   },
+   "severity": {
+    "inconvenience": 20
+   },
+   "not_found_rate": 0.7,
+   "workaround_rate": 0.0,
+   "severity_score": 1.0,
+   "recent_share": 1.0,
+   "cues_remembered": {
+    "when": 4,
+    "where": 1,
+    "event": 1,
+    "appearance": 1
+   },
+   "cues_forgotten": {},
+   "quotes": [
+    {
+     "item_id": "gcomm:437015100",
+     "source": "google_community",
+     "quote": "My old photos and video of 2013 are not showing"
+    },
+    {
+     "item_id": "play:80bcf2b4-57ae-41fc-8439-2279ba71d9f6",
+     "source": "play",
+     "quote": "What do I need to do to find certain photos?"
+    },
+    {
+     "item_id": "reddit:1tmlbmg",
+     "source": "reddit",
+     "quote": "Photos missing on main screen"
+    },
+    {
+     "item_id": "gcomm:465289959",
+     "source": "google_community",
+     "quote": "how to find photos tken in 2012"
+    },
+    {
+     "item_id": "gcomm:465416826",
+     "source": "google_community",
+     "quote": "I can't find my ss in google photos as well as phone gallery they just disappeared and many old photos specially screenshots"
+    }
+   ],
+   "sources_with_quote": 3,
+   "score_parts": {
+    "frequency": 0.12,
+    "spread": 0.0,
+    "severity": 0.0,
+    "underserved": 0.73,
+    "recency": 1.0
+   },
+   "score": 0.289
+  },
+  {
+   "id": 6,
+   "name": "Broken keyword and image search",
+   "definition": "Posts reporting that general keyword search, text search within screenshots, or internet image search functions have completely stopped working or return inaccurate results.",
+   "group": "regression",
+   "items": 13,
+   "threads": 12,
+   "sources": {
+    "appstore": 2,
+    "google_community": 4,
+    "play": 3,
+    "reddit": 4
+   },
+   "products": {
+    "google_photos": 7,
+    "apple_photos": 3,
+    "amazon_photos": 2,
+    "unknown": 1
+   },
+   "failure_modes": {
+    "regression": 13
+   },
+   "photo_types": {
+    "screenshot_functional": 2
+   },
+   "severity": {
+    "inconvenience": 12,
+    "time_loss": 1
+   },
+   "not_found_rate": 0.46153846153846156,
+   "workaround_rate": 0.0,
+   "severity_score": 1.0769230769230769,
+   "recent_share": 0.6153846153846154,
+   "cues_remembered": {
+    "appearance": 1
+   },
+   "cues_forgotten": {},
+   "quotes": [
+    {
+     "item_id": "appstore:ca:12686933450",
+     "source": "appstore",
+     "quote": "Now, the search function no longer works!"
+    },
+    {
+     "item_id": "gcomm:441998886",
+     "source": "google_community",
+     "quote": "What the heck happened to image search? Where you could search the Internet for a specific image."
+    },
+    {
+     "item_id": "play:845be447-2f28-49a5-902c-fdc30559531c",
+     "source": "play",
+     "quote": "can't search photos. suddenly happened"
+    },
+    {
+     "item_id": "reddit:1iaob2b",
+     "source": "reddit",
+     "quote": "idk why but i try to find a screenshot with a certain screenname or word but it never comes up"
+    },
+    {
+     "item_id": "appstore:ca:13746457879",
+     "source": "appstore",
+     "quote": "The new update ruined my favourite feature.. Image search!"
+    }
+   ],
+   "sources_with_quote": 4,
+   "score_parts": {
+    "frequency": 0.0,
+    "spread": 0.25,
+    "severity": 0.41,
+    "underserved": 0.33,
+    "recency": 0.31
+   },
+   "score": 0.217
+  },
+  {
+   "id": 4,
+   "name": "AI (Gemini) search replaced or worsened classic search",
+   "definition": "Since Gemini or AI search was introduced or updated, the classic search that worked before is gone or gives worse results, including object, location and keyword search.",
+   "group": "regression",
+   "items": 23,
+   "threads": 15,
+   "sources": {
+    "appstore": 1,
+    "google_community": 6,
+    "play": 5,
+    "reddit": 11
+   },
+   "products": {
+    "google_photos": 12,
+    "unknown": 7,
+    "amazon_photos": 3,
+    "apple_photos": 1
+   },
+   "failure_modes": {
+    "regression": 23
+   },
+   "photo_types": {
+    "person_face_related": 5
+   },
+   "severity": {
+    "inconvenience": 22,
+    "unclear": 1
+   },
+   "not_found_rate": 0.34782608695652173,
+   "workaround_rate": 0.08695652173913043,
+   "severity_score": 1.0,
+   "recent_share": 0.8695652173913043,
+   "cues_remembered": {
+    "appearance": 1
+   },
+   "cues_forgotten": {},
+   "quotes": [
+    {
+     "item_id": "appstore:gb:14544646523",
+     "source": "appstore",
+     "quote": "After updating to 26.5, trips have disappeared across all devices! Now already named people get UNRECOGNISED!!"
+    },
+    {
+     "item_id": "gcomm:432527747",
+     "source": "google_community",
+     "quote": "Search in Google photos has been replaced by a ridiculous 'hammer' called Gemini AI"
+    },
+    {
+     "item_id": "play:a063c498-e373-40ef-8576-598daab29f0d",
+     "source": "play",
+     "quote": "in particular search functions now terrible I can't find any photos of looking for"
+    },
+    {
+     "item_id": "reddit:1qbt12z",
+     "source": "reddit",
+     "quote": "Search has complete stopped working for me."
+    },
+    {
+     "item_id": "gcomm:435285118",
+     "source": "google_community",
+     "quote": "Why can\u2019t I search by location anymore??"
+    }
+   ],
+   "sources_with_quote": 4,
+   "score_parts": {
+    "frequency": 0.07,
+    "spread": 0.25,
+    "severity": 0.0,
+    "underserved": 0.08,
+    "recency": 0.77
+   },
+   "score": 0.156
+  },
+  {
+   "id": 7,
+   "name": "[residual] Finding Specific Photos in Large Libraries",
+   "definition": "The user struggles to locate, filter, or browse specific photos and videos within a massive, unorganized, or slow-loading library.",
+   "group": "scale_and_content",
+   "items": 13,
+   "threads": 13,
+   "sources": {
+    "appstore": 4,
+    "hackernews": 4,
+    "play": 2,
+    "reddit": 1,
+    "stackexchange": 2
+   },
+   "products": {
+    "google_photos": 4,
+    "apple_photos": 3,
+    "onedrive": 3,
+    "unknown": 3
+   },
+   "failure_modes": {
+    "content_type_gap": 5,
+    "scale_or_speed": 8
+   },
+   "photo_types": {
+    "screenshot_functional": 3,
+    "received_forwarded": 1
+   },
+   "severity": {
+    "inconvenience": 6,
+    "time_loss": 7
+   },
+   "not_found_rate": 0.3076923076923077,
+   "workaround_rate": 0.07692307692307693,
+   "severity_score": 1.5384615384615385,
+   "recent_share": 0.6153846153846154,
+   "cues_remembered": {
+    "appearance": 2,
+    "where": 1
+   },
+   "cues_forgotten": {},
+   "quotes": [
+    {
+     "item_id": "appstore:au:13434514362",
+     "source": "appstore",
+     "quote": "It is not as easy to filter and find photos that you haven\u2019t taken with your iPhone."
+    },
+    {
+     "item_id": "hackernews:38069278",
+     "source": "hackernews",
+     "quote": "I have too many pictures to sort through now. I've tried multiple times; I don't have enough time to go through them all."
+    },
+    {
+     "item_id": "play:34b2a5eb-23c3-4691-ac33-d6f6de18ade0",
+     "source": "play",
+     "quote": "Only thing I'm missing is 1) Contextual search and 2) Sharing albums with people it only shows their email."
+    },
+    {
+     "item_id": "stackexchange:android:229184",
+     "source": "stackexchange",
+     "quote": "photos, I cant find the latest screenshots at all"
+    },
+    {
+     "item_id": "reddit:1vcu3cs",
+     "source": "reddit",
+     "quote": "Finding specific photo in a large album"
+    }
+   ],
+   "sources_with_quote": 5,
+   "score": null
+  },
+  {
+   "id": 15,
+   "name": "[residual] Advanced Filtering and Content Management",
+   "definition": "Posts about finding specific items among thousands, extracting photos from auto-generated slideshows, or poor AI search.",
+   "group": "unspecified",
+   "items": 14,
+   "threads": 13,
+   "sources": {
+    "appstore": 1,
+    "google_community": 3,
+    "hackernews": 4,
+    "play": 1,
+    "reddit": 2,
+    "stackexchange": 2,
+    "youtube": 1
+   },
+   "products": {
+    "apple_photos": 6,
+    "google_photos": 6,
+    "ente": 1,
+    "unknown": 1
+   },
+   "failure_modes": {
+    "unspecified": 14
+   },
+   "photo_types": {
+    "person_face_related": 2,
+    "early_digital": 1
+   },
+   "severity": {
+    "inconvenience": 14
+   },
+   "not_found_rate": 0.5,
+   "workaround_rate": 0.07142857142857142,
+   "severity_score": 1.0,
+   "recent_share": 0.5,
+   "cues_remembered": {
+    "who": 1
+   },
+   "cues_forgotten": {},
+   "quotes": [
+    {
+     "item_id": "appstore:in:13790630342",
+     "source": "appstore",
+     "quote": "couldn\u2019t find pics properly"
+    },
+    {
+     "item_id": "gcomm:444388254",
+     "source": "google_community",
+     "quote": "how do I filter for photos that are not part of any albums?"
+    },
+    {
+     "item_id": "hackernews:39088387",
+     "source": "hackernews",
+     "quote": "Apple Photos search is just bad, very bad."
+    },
+    {
+     "item_id": "play:8052831c-22e8-4255-ada1-c23a350c2cde",
+     "source": "play",
+     "quote": "It detects the thousands upon thousands of album art on my microSD, so I can never find the camera's photos folder as there is no option to search by folder name"
+    },
+    {
+     "item_id": "reddit:1uinuct",
+     "source": "reddit",
+     "quote": "Is there a search term for finding photos I have edited?"
+    }
+   ],
+   "sources_with_quote": 5,
+   "score": null
+  }
+ ],
+ "remember_forget": {
+  "all_extracted": {
+   "appearance": {
+    "remembered": 45,
+    "forgotten": 0,
+    "unknown": 0
+   },
+   "event": {
+    "remembered": 7,
+    "forgotten": 0,
+    "unknown": 0
+   },
+   "provenance": {
+    "remembered": 5,
+    "forgotten": 0,
+    "unknown": 0
+   },
+   "purpose": {
+    "remembered": 4,
+    "forgotten": 0,
+    "unknown": 0
+   },
+   "text_in_photo": {
+    "remembered": 10,
+    "forgotten": 0,
+    "unknown": 0
+   },
+   "when": {
+    "remembered": 23,
+    "forgotten": 3,
+    "unknown": 0
+   },
+   "where": {
+    "remembered": 24,
+    "forgotten": 0,
+    "unknown": 0
+   },
+   "who": {
+    "remembered": 20,
+    "forgotten": 0,
+    "unknown": 0
+   }
+  },
+  "retrieval_failures": {
+   "appearance": {
+    "remembered": 31,
+    "forgotten": 0,
+    "unknown": 0
+   },
+   "event": {
+    "remembered": 3,
+    "forgotten": 0,
+    "unknown": 0
+   },
+   "provenance": {
+    "remembered": 3,
+    "forgotten": 0,
+    "unknown": 0
+   },
+   "purpose": {
+    "remembered": 3,
+    "forgotten": 0,
+    "unknown": 0
+   },
+   "text_in_photo": {
+    "remembered": 7,
+    "forgotten": 0,
+    "unknown": 0
+   },
+   "when": {
+    "remembered": 12,
+    "forgotten": 1,
+    "unknown": 0
+   },
+   "where": {
+    "remembered": 16,
+    "forgotten": 0,
+    "unknown": 0
+   },
+   "who": {
+    "remembered": 10,
+    "forgotten": 0,
+    "unknown": 0
+   }
+  },
+  "by_photo_type": {
+   "early_digital": {
+    "text_in_photo": {
+     "remembered": 1,
+     "forgotten": 0,
+     "unknown": 0
+    },
+    "when": {
+     "remembered": 2,
+     "forgotten": 0,
+     "unknown": 0
+    }
+   },
+   "migrated": {
+    "text_in_photo": {
+     "remembered": 1,
+     "forgotten": 0,
+     "unknown": 0
+    },
+    "when": {
+     "remembered": 1,
+     "forgotten": 0,
+     "unknown": 0
+    },
+    "where": {
+     "remembered": 1,
+     "forgotten": 0,
+     "unknown": 0
+    }
+   },
+   "person_face_related": {
+    "appearance": {
+     "remembered": 10,
+     "forgotten": 0,
+     "unknown": 0
+    },
+    "event": {
+     "remembered": 1,
+     "forgotten": 0,
+     "unknown": 0
+    },
+    "where": {
+     "remembered": 4,
+     "forgotten": 0,
+     "unknown": 0
+    },
+    "who": {
+     "remembered": 8,
+     "forgotten": 0,
+     "unknown": 0
+    }
+   },
+   "received_forwarded": {
+    "appearance": {
+     "remembered": 1,
+     "forgotten": 0,
+     "unknown": 0
+    },
+    "provenance": {
+     "remembered": 2,
+     "forgotten": 0,
+     "unknown": 0
+    },
+    "when": {
+     "remembered": 3,
+     "forgotten": 0,
+     "unknown": 0
+    },
+    "who": {
+     "remembered": 2,
+     "forgotten": 0,
+     "unknown": 0
+    }
+   },
+   "scanned_print": {
+    "when": {
+     "remembered": 0,
+     "forgotten": 1,
+     "unknown": 0
+    },
+    "where": {
+     "remembered": 1,
+     "forgotten": 0,
+     "unknown": 0
+    }
+   },
+   "screenshot_functional": {
+    "appearance": {
+     "remembered": 3,
+     "forgotten": 0,
+     "unknown": 0
+    },
+    "purpose": {
+     "remembered": 3,
+     "forgotten": 0,
+     "unknown": 0
+    },
+    "text_in_photo": {
+     "remembered": 2,
+     "forgotten": 0,
+     "unknown": 0
+    },
+    "where": {
+     "remembered": 2,
+     "forgotten": 0,
+     "unknown": 0
+    }
+   }
+  }
+ },
+ "sensitivity": {
+  "default weights": [
+   8,
+   5,
+   14,
+   3,
+   12,
+   1,
+   11,
+   6,
+   4
+  ],
+  "equal weights": [
+   8,
+   14,
+   5,
+   12,
+   3,
+   1,
+   11,
+   6,
+   4
+  ],
+  "frequency only": [
+   8,
+   5,
+   1,
+   3,
+   12,
+   11,
+   4,
+   14,
+   6
+  ],
+  "underserved and severity": [
+   14,
+   8,
+   3,
+   6,
+   11,
+   5,
+   12,
+   1,
+   4
+  ]
+ }
+}
